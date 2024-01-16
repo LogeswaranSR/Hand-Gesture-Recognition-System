@@ -16,9 +16,16 @@ The model is trained over 15,000 images of hand gestures for about 100 epochs. T
 *    L
 *    C
 
+The model produces an accuracy of 88% on the Testing Dataset
+
 # Evaluation
 
+![Training History](https://github.com/LogeswaranSR/PRODIGY_ML_04/assets/131794661/c0ba4cea-0e0e-45b8-a56c-8e0337969b66)
+
+
 # Inference
+![Hand Gesture model Inference](https://github.com/LogeswaranSR/PRODIGY_ML_04/assets/131794661/8f5dba09-3971-4602-b453-536773ef9f12)
+
 
 # Dataset
 The dataset used here is **Hand Gesture Recognition Database** provided by gti-upm in Kaggle. Hand gesture recognition database is composed by a set of near infrared images acquired by the Leap Motion sensor. The database is composed by 10 different hand-gestures (showed above) that were performed by 10 different subjects (5 men and 5 women). The database, as a whole, consists of 20,000 annotated images, separated into folders based on the hand gesture and the subject performed.
