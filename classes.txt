@@ -1,0 +1,10 @@
+down
+fist
+l
+c
+thumb
+palm
+index
+ok
+fist_moved
+palm_moved

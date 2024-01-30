@@ -9,14 +9,22 @@ import cv2
 import numpy as np
 from keras.models import load_model
 
-model = load_model()
+model = load_model('hand_gesture_recognition.h5')
 with open('classes.txt', 'r') as file:
     classes = file.readlines()
+    num_classes = len(classes)
+    for i in range(num_classes):
+        classes[i] = classes[i].split('\n')[0]
 
 vdo=cv2.VideoCapture(0)
+vdo.set(cv2.CAP_PROP_FRAME_WIDTH, 224)
+vdo.set(cv2.CAP_PROP_FRAME_HEIGHT, 224)
+
+
 while True:
     isTrue,Frame=vdo.read()
-    
+    print(Frame.shape)
+    # Frame = Frame.reshape((1, 224, 224, 1))
     preds=model.predict(Frame)
     preds = np.argmax(preds, axis=1)
     class_name = classes[preds]
@@ -27,4 +35,4 @@ while True:
         break
 
 vdo.release()
-cv2 .destroyAllWindows()
+cv2.destroyAllWindows()
