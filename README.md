@@ -1,5 +1,5 @@
-# PRODIGY_ML_04
-Develop a Hand gesture recognition model that can accurately identify and classify different hand gestures from image or video data, enabling intuitive human-computer interaction and gesture-based control systems.
+# Hand Gesture Recognition System
+This project aims to develop a Hand gesture recognition model that can accurately identify and classify different hand gestures from image or video data, enabling intuitive human-computer interaction and gesture-based control systems.
 
 # Description
 This project aims to develop a Deep Learning Model for Hand Gesture Recognition for gesture-based control systems. The model uses Convolution Neural Networks (CNN) Architecture to extract information from the images.
